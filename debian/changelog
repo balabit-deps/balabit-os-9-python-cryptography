@@ -1,3 +1,19 @@
+python-cryptography (3.4.8-1ubuntu2.1) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: corrupted output via immutable objects
+    - debian/patches/CVE-2023-23931.patch: don't allow update_into to
+      mutate immutable objects in tests/hazmat/primitives/test_ciphers.py,
+      src/cryptography/hazmat/backends/openssl/ciphers.py.
+    - CVE-2023-23931
+  * SECURITY UPDATE: DoS via PKCS7 certificate
+    - debian/patches/CVE-2023-49083.patch: fix crash when loading a PKCS#7
+      bundle with no certificates in
+      src/cryptography/hazmat/backends/openssl/backend.py,
+      tests/hazmat/primitives/test_pkcs7.py.
+    - CVE-2023-49083
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 04 Dec 2023 14:58:43 -0500
+
 python-cryptography (3.4.8-1ubuntu2) jammy; urgency=medium
 
   * d/p/skip-test-openssl-memleak.patch: Skip test until fixed upstream.

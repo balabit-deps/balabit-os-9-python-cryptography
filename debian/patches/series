@@ -8,3 +8,5 @@ openssl3/0005-3.0.0-deprecated-func-and-it-isn-t-useful-to-us-in-g.patch
 openssl3/0006-remove-unneeded-binding-6150.patch
 openssl3/0007-openssl-3.0.1-ftbfs.patch
 skip-test-openssl-memleak.patch
+CVE-2023-23931.patch
+CVE-2023-49083.patch
