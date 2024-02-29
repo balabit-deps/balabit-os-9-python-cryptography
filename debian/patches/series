@@ -10,3 +10,4 @@ openssl3/0007-openssl-3.0.1-ftbfs.patch
 skip-test-openssl-memleak.patch
 CVE-2023-23931.patch
 CVE-2023-49083.patch
+CVE-2023-50782.patch

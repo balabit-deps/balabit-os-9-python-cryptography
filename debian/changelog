@@ -1,3 +1,14 @@
+python-cryptography (3.4.8-1ubuntu2.2) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: exposure of confidential data
+    - debian/patches/CVE-2023-50782.patch: update bindings in
+      src/_cffi_src/openssl/rsa.py to be compatible with new openssl version
+      3.0.2-0ubuntu1.15, which fixes the issue by changing PKCS#1 v1.5 RSA to 
+      return random output instead of an exception when detecting wrong padding
+    - CVE-2023-50782 
+
+ -- Jorge Sancho Larraz <jorge.sancho.larraz@canonical.com>  Thu, 29 Feb 2024 12:14:30 +0100
+
 python-cryptography (3.4.8-1ubuntu2.1) jammy-security; urgency=medium
 
   * SECURITY UPDATE: corrupted output via immutable objects
