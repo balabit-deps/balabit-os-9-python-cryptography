@@ -11,3 +11,5 @@ skip-test-openssl-memleak.patch
 CVE-2023-23931.patch
 CVE-2023-49083.patch
 CVE-2023-50782.patch
+CVE-2026-26007-pre1.patch
+CVE-2026-26007.patch

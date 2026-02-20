@@ -1,3 +1,19 @@
+python-cryptography (3.4.8-1ubuntu2.3) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: Subgroup Attack Due to Missing Subgroup Validation for
+    SECT Curves
+    - debian/patches/CVE-2026-26007-pre1.patch: check if public keys are at
+      infinity earlier in src/cryptography/hazmat/backends/openssl/ec.py,
+      tests/hazmat/primitives/test_ec.py.
+    - debian/patches/CVE-2026-26007.patch: EC check key on cofactor > 1 in
+      src/cryptography/hazmat/primitives/asymmetric/ec.py,
+      src/cryptography/utils.py, tests/hazmat/primitives/test_ec.py,
+      src/_cffi_src/openssl/ec.py,
+      src/cryptography/hazmat/backends/openssl/ec.py.
+    - CVE-2026-26007
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 20 Feb 2026 10:14:37 -0500
+
 python-cryptography (3.4.8-1ubuntu2.2) jammy-security; urgency=medium
 
   * SECURITY UPDATE: exposure of confidential data
