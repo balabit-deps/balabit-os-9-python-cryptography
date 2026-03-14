@@ -1,3 +1,11 @@
+python-cryptography (3.4.8-1ubuntu2.4) jammy-security; urgency=medium
+
+  * SECURITY REGRESSION: ecc support regression (LP: #2144373)
+    - debian/patches/CVE-2026-26007.patch: updated to remove problematic
+      deprecation warning code which is causing a regression with ansible.
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Sat, 14 Mar 2026 08:22:06 -0400
+
 python-cryptography (3.4.8-1ubuntu2.3) jammy-security; urgency=medium
 
   * SECURITY UPDATE: Subgroup Attack Due to Missing Subgroup Validation for
